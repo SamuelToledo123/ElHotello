@@ -1,5 +1,5 @@
 
-public class Room implements RoomTemplate {
+abstract class Room implements RoomTemplate {
 
     private boolean occupied;
     private int amountOfBeds;
@@ -21,6 +21,10 @@ public class Room implements RoomTemplate {
         return occupied;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
     public int getAmountOfBeds() {
         return amountOfBeds;
 
@@ -33,16 +37,10 @@ public class Room implements RoomTemplate {
     @Override
     public String getInfo() {
         return "Room{" +
-                "Upptaget" + occupied +
+                "Upptaget: " + occupied +
                 "\nAntal sängar: " + amountOfBeds +
                 "\nPris: " + price +
                 "}";
-    }
-
-    @Override
-    public String toString() {
-        return getInfo();
-
     }
 }
 

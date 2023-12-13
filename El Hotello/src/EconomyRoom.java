@@ -7,8 +7,15 @@ public class EconomyRoom extends Room {
         this.bathtub = bathtub;
     }
 
-    public String  getInfo() {
-        return "lots of bugs in bed";
+
+    public String getInfoEconomyRoom() {
+        return "Room{" +
+                "Upptaget: " + isOccupied() +
+                "\nAntal sängar: " + getAmountOfBeds() +
+                "\nPris: " + getPrice() +
+                "Beskrivning: " + getDescription() +
+                "Antal badkar: " + bathtub +
+                "}";
     }
 
 }
