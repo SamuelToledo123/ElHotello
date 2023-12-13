@@ -20,7 +20,7 @@ public class BookRoomPanel extends JPanel {
     private JTextField writeAmountOfNigths = new JTextField();
 
     private JPanel buttonPanel = new JPanel();
-    private JButton book = new JButton("Pay now");
+    private JButton book = new JButton("To payment");
     private JButton cancel = new JButton("Cancel");
 
     public BookRoomPanel(Frame frame){
@@ -37,6 +37,9 @@ public class BookRoomPanel extends JPanel {
         buttonPanel.setLayout(new GridLayout(1,2));
         buttonPanel.add(book);
         buttonPanel.add(cancel);
+
+        cancel.addActionListener(e -> {frame.showPage(Panels.MENU.name());});
+        book.addActionListener(e -> frame.showPage(Panels.PAYMENT.name()));
 
 
         add(textAndFields, BorderLayout.NORTH);

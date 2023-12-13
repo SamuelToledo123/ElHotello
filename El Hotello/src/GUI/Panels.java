@@ -4,5 +4,7 @@ public enum Panels {
     MENU,
     SHOWROOM,
     INFO,
-    BOOKROOM;
+    BOOKROOM,
+    PAYMENT,
+    BOOKINGS;
 }

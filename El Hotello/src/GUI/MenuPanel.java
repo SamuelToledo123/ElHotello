@@ -12,12 +12,9 @@ public class MenuPanel extends JPanel {
         setVisible(true);
         setLayout(new BorderLayout());
 
-        infoHotel.addActionListener(e -> {
-            frame.showPage(Panels.INFO.name());
-        });
-        availableRooms.addActionListener(e -> {
-            frame.showPage(Panels.SHOWROOM.name());
-        });
+        infoHotel.addActionListener(e -> {frame.showPage(Panels.INFO.name());});
+        availableRooms.addActionListener(e -> {frame.showPage(Panels.SHOWROOM.name());});
+        myBookings.addActionListener(e -> frame.showPage(Panels.BOOKINGS.name()));
 
 
         JPanel southPanel = new JPanel();
