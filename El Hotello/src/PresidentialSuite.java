@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class PresidentialSuite extends Room {
 
     boolean highTechSecuritySystem;
@@ -7,9 +9,9 @@ public class PresidentialSuite extends Room {
 
 
 
-    public PresidentialSuite(boolean occupied, int amountOfBeds, int price, String description,
+    public PresidentialSuite(LocalDate localdate, boolean occupied, int amountOfBeds, int price, String description,
                              boolean highTechSecuritySystem, int wetBar, int firePlace, int prepKitchen) {
-        super(occupied, amountOfBeds, price, description);
+        super(occupied, amountOfBeds, price, description, localdate);
         this.highTechSecuritySystem = highTechSecuritySystem;
         this.wetBar = wetBar;
         this.firePlace = firePlace;

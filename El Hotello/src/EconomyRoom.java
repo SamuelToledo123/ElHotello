@@ -1,9 +1,11 @@
+import java.time.LocalDate;
+
 public class EconomyRoom extends Room {
     private int bathtub;
 
 
-    public EconomyRoom(boolean occupied, int amountOfBeds, int price, String description, int bathtub) {
-        super(occupied, amountOfBeds, price, description);
+    public EconomyRoom(LocalDate localdate, boolean occupied, int amountOfBeds, int price, String description, int bathtub) {
+        super(occupied, amountOfBeds, price, description, localdate);
         this.bathtub = bathtub;
     }
 
