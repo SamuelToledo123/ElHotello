@@ -34,6 +34,7 @@ abstract class Room implements RoomTemplate {
         return price;
     }
 
+    @Override
     public String getInfo() {
         return "Room{" +
                 "Upptaget: " + occupied +

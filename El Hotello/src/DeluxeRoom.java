@@ -1,11 +1,14 @@
-public class LuxuryRoom extends Room{
-
+public class DeluxeRoom extends Room {
 
     int jacuzzi;
+    boolean conciergeService;
+    int bathrooms;
 
-    public LuxuryRoom(boolean occupied, int amountOfBeds, int price, String description, int jacuzzi) {
+    public DeluxeRoom(boolean occupied, int amountOfBeds, int price, String description, int jacuzzi, boolean conciergeService, int bathrooms) {
         super(occupied, amountOfBeds, price, description);
         this.jacuzzi = jacuzzi;
+        this.conciergeService = conciergeService;
+        this.bathrooms = bathrooms;
     }
 
     @Override
@@ -16,7 +19,8 @@ public class LuxuryRoom extends Room{
                 "\nPris: " + getPrice() +
                 "\nBeskrivning: " + getDescription() +
                 "\nAntal Jacuzzi: " + jacuzzi +
+                "\nConcierge:  " + conciergeService +
+                "\nAntal badrum: " + bathrooms +
                 "}";
     }
-
 }

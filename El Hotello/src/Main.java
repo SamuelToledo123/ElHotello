@@ -3,9 +3,15 @@
 
         RoomFactory roomFactory = new RoomFactory();
 
-        Room room = roomFactory.createEconomyRoom();
-        System.out.println(room.getInfo());
 
+        Room presidentialsuit = roomFactory.createPresidentialsuite();
+        Room luxuryRoom = roomFactory.createLuxuryRoom();
+        Room economyRoom = roomFactory.createEconomyRoom();
+        //System.out.println(room.getInfo());
+
+        System.out.println("\n");
+        //System.out.println(luxuryRoom.getInfo());
+        System.out.println(economyRoom.getInfo());
 
 
 

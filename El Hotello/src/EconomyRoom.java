@@ -8,13 +8,14 @@ public class EconomyRoom extends Room {
     }
 
 
-    public String getInfoEconomyRoom() {
+    @Override
+    public String getInfo() {
         return "Room{" +
                 "Upptaget: " + isOccupied() +
                 "\nAntal sängar: " + getAmountOfBeds() +
                 "\nPris: " + getPrice() +
-                "Beskrivning: " + getDescription() +
-                "Antal badkar: " + bathtub +
+                "\nBeskrivning: " + getDescription() +
+                "\nAntal badkar: " + bathtub +
                 "}";
     }
 
