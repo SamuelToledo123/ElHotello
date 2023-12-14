@@ -21,12 +21,13 @@ public class PresidentialSuite extends Room {
 
     @Override
     public String getInfo() {
-        return "Room{" +
+        String securitySystemStatus = highTechSecuritySystem ? "Ja" : "Nej";
+        return "PresidentialSuit{" +
                 "Upptaget: " + isOccupied() +
                 "\nAntal sängar: " + getAmountOfBeds() +
                 "\nPris: " + getPrice() +
                 "\nBeskrivning: " + getDescription() +
-                "\nSecurity System ingår: " + highTechSecuritySystem +
+                "\nSecurity System ingår: " + securitySystemStatus +
                 "\nBar:" + wetBar +
                 "\nÖppen spis:" + firePlace +
                 "\nKök: " + prepKitchen +

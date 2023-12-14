@@ -4,8 +4,8 @@ public class RoomFactory {
 
 
 
-    public EconomyRoom createEconomyRoom() {
-        return new EconomyRoom(false, 2, 500, "Its a room", 1);
+    public EconomyRoom createEconomyRoom(LocalDate bookinDate) {
+        return new EconomyRoom(bookinDate,false, 2, 500, "Its a room", 1);
     }
 
 
