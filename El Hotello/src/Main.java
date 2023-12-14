@@ -7,7 +7,6 @@
         System.out.println(room.getInfo());
 
 
-        //LuxuryRoom luxuryRoom = roomFactory.createLuxuryRoom(1, 1300, )
 
 
 
